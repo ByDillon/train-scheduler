@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- Jquey CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- FireBase -->
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+<!-- MomentJs CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</head>
+<body>
+	<!-- Header -->
+	<div class="container">
+		<div id="header" class="jumbotron text-center">
+			<h1>ALL ABOARD</h1>
+		</div>
+		
+		<!-- Train schedule -->
+		<div class="panel panel-primary">
+		  		<!-- Default panel contents -->
+			  <div class="panel-heading">Current Train Schedule</div>
+			  <div class="panel-body">
+		  	  </div>
+			  <!-- Table -->
+			  <table class="table">
+			    <tr>
+			    	<th>Train Name</th>
+			    	<th>Destination</th>
+			    	<th>Frequency</th>
+			    	<th>Next Arival</th>	
+			    	<th>Minutes Away</th>
+			    </tr>
+			  </table>
+		</div>
+		
+		<!-- Train Input -->	  
+	  	<div id="input" class="panel panel-primary">
+		  <div class="panel-heading">Add Train</div>
+		  <div class="panel-body">
+			    <div class="form-group">
+	    			<label id="exampleInputEmail1">Train Name</label>
+	    			<input type="email" class="form-control" id="trainName">
+	 			</div>
+	 			<div class="form-group">
+	    			<label id="exampleInputEmail1">Destination</label>
+	    			<input type="email" class="form-control" id="dest">
+	 			</div>
+	 			<div class="form-group">
+	    			<label id="exampleInputEmail1">First Train Time(HH:mm - military time)</label>
+	    			<input type="email" class="form-control" id="firstTrainTime">
+	 			</div>
+	 			<div class="form-group">
+	    			<label id="exampleInputEmail1">Frequency (min)</label>
+	    			<input type="email" class="form-control" id="freq">
+	 			</div>
+	 			<button type="submit" class="btn btn-primary" id='submit'>Submit</button>
+		  </div>
+	 	</div>
+	</div>
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="assets/javascript/train.js"></script>
+</body>
+
+</html>
